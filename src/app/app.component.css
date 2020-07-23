@@ -1,10 +1,42 @@
-table, th, td 
-{
-    margin: 10px 0;
-    border: solid 1px #333;
-    padding: 2px 4px;
-    font: 15px Verdana;
+.example-card{
+    top:25%;
+    left:25%;
+    width:40%;
+    height:40%;
+    text-align:center;
+    position:fixed;
+    background-color: darkslateblue;
 }
-th {
-    font-weight:bold;
+.list{
+    display:flex;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 30;
+    flex-direction: column;
+    width: 50%;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    cursor: pointer;
+    box-shadow:2px 5px 15px 2px rgb(57,54,247);
+    transition: 0.3s ease-out;
+    transition-delay: 0.3s;
+
+}
+h1{
+    font-weight: bold;
+    font-style: normal;
+    text-align:center;
+
+
+}
+h3{
+    text-align: right;
+
+}
+h4{
+    text-align: right;
+
 }

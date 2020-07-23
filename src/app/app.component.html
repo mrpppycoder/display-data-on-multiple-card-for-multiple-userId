@@ -5,10 +5,10 @@
   </nb-layout-header>
 
   <nb-layout-column>
-    <nb-card>
-      <nb-card-body>
+    <!--<nb-card>
+      <nb-card-body>-->
         <!--Using Table-->
-        <div class="container">
+        <!--<div class="container">
           <table class="table table-striped">
             <thead>
                 <tr>
@@ -27,21 +27,29 @@
               </tr>
             </tbody>
           </table>
-        </div>
+        </div>-->
         <!--Using List--> 
-        <!--<nb-list>
-          <nb-list-item *ngFor="let record of data">
-            UserId:{{record.UserId}}
-           Id: {{record.id}}
-           title: {{record.title}}
-           completed:{{record.completed}}
-            
-
-          </nb-list-item>
-        </nb-list>-->
-      </nb-card-body>
-    </nb-card>
-
+        <div class="nb-card">
+          <div *ngFor="let record of data">
+            <nb-card class="list">
+              <nb-list [routerLink]="record.UserId">
+                <nb-list-item>
+                  {{record.UserId}}
+                </nb-list-item>
+                </nb-list>
+            <div class="container">
+            <h1>UserId:{{record.UserId}}</h1>
+            <h2>Id: {{record.id}}</h2>
+            <h3>title: {{record.title}}</h3>
+            <h4>completed:{{record.completed}}</h4>
+          </div>
+            </nb-card>
+            </div>
+            </div>
+          
+      <!--</nb-card-body>
+    </nb-card>-->
+    
   </nb-layout-column>
 
   <nb-layout-footer fixed>
